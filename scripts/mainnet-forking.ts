@@ -46,13 +46,6 @@ async function main() {
 
     console.log("==========================================================");
 
-    // await ROUTER.addLiquidity(
-    //     USDC,
-    //     DAI,
-
-    // )
-
-
 }
 
 // We recommend this pattern to be able to use async/await everywhere
