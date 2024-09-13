@@ -23,8 +23,8 @@ async function main() {
     console.log("UNI Wallet Balance: "+ await UNI_Contract.balanceOf(TOKEN_HOLDER));
     const amountADesired = ethers.parseUnits("1", 18);
     const amountBDesired = ethers.parseUnits("2", 18);
-    const amountAMin =  ethers.parseUnits("0.9", 18);         // amountAMin: Minimum USDT (just under 1 USDT)
-    const amountBMin = ethers.parseUnits("1", 18);    // amountBMin: Minimum UNI (slightly less than 2 UNI)
+    const amountAMin =  ethers.parseUnits("0", 18);         // amountAMin: Minimum USDT (just under 1 USDT)
+    const amountBMin = ethers.parseUnits("0", 18);    // amountBMin: Minimum UNI (slightly less than 2 UNI)
 
     await USDC_Contract.approve(ROUTER, amountADesired);
     await UNI_Contract.approve(ROUTER, amountBDesired);
